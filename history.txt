@@ -1,0 +1,20 @@
+fg 1 
+jobs 
+sleep 100 
+quit 
+vim 
+fg 1 
+jobs 
+pinfo 
+pinfo 11591 
+ps 
+sig 1 9 
+jobs 
+sleep 5 
+jobs 
+cd 
+cd .vscode 
+cd 
+quit 
+sleep 2 
+sleep 10 
