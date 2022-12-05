@@ -95,3 +95,7 @@ This functionality has been implemented using the execvp system call mainly.
 ### 9. DISCOVER 
 
 Command allows you to iteratively check for existing files in a directory.
+
+### 10. PROCESS INFO
+
+pinfo - command tells the status of the currently running processes, be it foreground or background.
