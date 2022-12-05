@@ -9,10 +9,6 @@ Run `make` to compile the code, followed by `./a.out` to run the shell, from the
 
 > It has been assumed that the shell is only invoked from the directory where the program files are kept and this is a necessary condition for the **history** function to work.
 
->  **pinfo** has been added to the shell in this assignment due to the mac issues I faced during the previous assignment.
-
-> Syntax for every command has been followed as given in the pdf and upon error in any input format, shell will print the error out.
-
 ## Major Files
 
 ### header.h
@@ -27,9 +23,7 @@ Background process pool initialization and signal handling functions have been c
 
 Functions for reading the input in raw mode, parsing it while acocunting for: pipes `pipe_func()`, ampersand `parseampersand()`, cleaning the spaces `removespaces()`, and executing the command using the `commandchecker()` function.
 
-> Other files in the program contain codes for the respective specifications as mentioned in the file name.
-
-## SPECIFICATIONS FOR ASSIGNMENT 3
+## Shell functionalities
 
 ### 1. IO REDIRECTION
 
@@ -89,3 +83,15 @@ Upon a tab, `tabhandler()` function in the same file is called and it gets a lis
 In case the list of files/directories is empty, we return and if it is 1, we autofill that file/directory.
 
 * To accomodate for '/' & ' ' after folder or file, stat is used and appropriate flags are checked to see if it is a directory or file.
+
+### 7. BUILTIN COMMANDS
+
+cd, echo, pwd and ls have been implemented in their respective files.
+
+### 8. FOREGROUND AND BACKGROUND processes
+
+This functionality has been implemented using the execvp system call mainly.
+
+### 9. DISCOVER 
+
+Command allows you to iteratively check for existing files in a directory.
