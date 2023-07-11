@@ -1,6 +1,3 @@
-
-# Assignment 3: Extending the Shell
-
 ## Running the shell
 
 Run `make` to compile the code, followed by `./a.out` to run the shell, from the directory the files related to the program are stored.
